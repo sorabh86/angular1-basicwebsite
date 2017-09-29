@@ -11,7 +11,7 @@ This is a basic angular website introduce you some of the features such as 2 way
 * JavaScript (ECMA Script 5|6)
 * Flash | Flex | flexsdk
 * Frameworks | Wordpress | Magento 
-* Mobile (Android|Window|IPHONE), Desktop Application
+* Mobile (Android | Window | IPHONE), Desktop Application
 * Databases (Relational Databases | MySQL, NoSQL | MongoDB )
 ### Contact Us
 SKYPE : ssorabh.ssharma
@@ -22,4 +22,4 @@ github : https://github.com/sorabh86
 
 -----
 
-© copyright to expertcodedesign.com on 2015 
+© copyright to expertcodedesign.com on 2016 
