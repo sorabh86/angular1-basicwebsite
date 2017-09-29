@@ -1,0 +1,18 @@
+[
+  {
+    "id":1,
+    "name":"SOFTWARE DEVELOPMENT",
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad beatae rem cupiditate dicta deleniti natus nihil culpa. Fugit facere id possimus repellat dolorum iste, unde repudiandae molestiae laborum autem debitis reprehenderit omnis. Reiciendis alias quia, inventore corrupti in adipisci voluptates? vel blanditiis aliquid nostrum mollitia, aliquam pariatur provident sit sed a eligendi beatae nihil obcaecati sunt corporis odit vero eum dolorum optio illum et fug.",
+    "image":"soft-dev.png"
+  }, {
+    "id":2,
+    "name":"WEBSITE DEVELOPMENT",
+    "description":"Rerum dolore inventore porro, cum reiciendis maxime nostrum velit alias perferendis harum debitis, excepturi cumque eum numquam itaque? Voluptates vel blanditiis aliquid nostrum mollitia, aliquam pariatur provident sit sed a eligendi beatae nihil obcaecati sunt corporis odit vero eum dolorum optio illum et fugit est? Debitis, enim? Esse repudiandae laboriosam excepturi corrupti quaerat possimus quo perferendis facilis! Iure, saepe nihil hic doloremque facilis iste!",
+    "image":"web-dev.png"
+  }, {
+    "id":3,
+    "name":"GRAPHIC DESIGN",
+    "description":"Consectetur quos incidunt rem. Ipsam accusantium sapiente optio id voluptatum est quis explicabo et cupiditate veritatis laborum obcaecati necessitatibus assumenda doloremque, delectus dolor quisquam beatae illum perspiciatis possimus quo. Voluptates magnam recusandae debitis, consequatur molestias distinctio pariatur sit voluptas aspernatur reprehenderit ab iusto nobis facere doloribus quia nisi officia incidunt cum delectus? Repudiandae ab rem, ullam rerum.",
+    "image":"graphic-design.png"
+  }
+]

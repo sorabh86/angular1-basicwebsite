@@ -1,0 +1,27 @@
+[
+  {
+    "id":1,
+    "name":"Noida Location",
+    "street_address":"F33 F Block",
+    "city":"Noida",
+    "state":"UP",
+    "zip":"29184",
+    "phone":"732-345-3884"
+  },{
+    "id":2,
+    "name":"Delhi Location",
+    "street_address":"B-34 Block4",
+    "city":"Delhi",
+    "state":"DL",
+    "zip":"11435",
+    "phone":"938-345-5555"
+  },{
+    "id":3,
+    "name":"USA Location",
+    "street_address":"33 Street BO",
+    "city":"CA",
+    "state":"USA",
+    "zip":"28273",
+    "phone":"444-039-2312"
+  }
+]

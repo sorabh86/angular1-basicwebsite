@@ -1,0 +1,28 @@
+<!-- Jumbotron -->
+<div class="jumbotron">
+  
+  <div class="row">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+      <img class="img-responsive" src="http://lorempixel.com/400/400/" alt="image">            
+    </div>
+    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+      <h1>Simple Website</h1>
+      <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+    </div>
+  </div>
+  
+</div>
+
+<!-- Example row of columns -->
+<div class="row">
+  <div class="col-lg-4" ng-repeat="service in services">
+    <div style="border:1px solid #ccc;padding:20px;border-radius:8px" >
+      <p class="text-center"style="padding:0 0 10px 0">
+        <img ng-src="images/{{service.image}}" alt="png" style="width:80px">
+      </p>
+      <h4 class="text-center"><strong>{{service.name}}</strong></h4>
+      <p class="text-justify">{{service.description}}</p>
+    </div>
+  </div>
+
+</div>

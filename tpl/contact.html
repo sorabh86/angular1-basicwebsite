@@ -1,0 +1,11 @@
+<h2>Contact</h2>
+<p>Please email <a href="mailto:info@expertcodedesign.com">info@expertcodedesign.com</a></p>
+
+<h4>Locations</h4>
+<address ng-repeat="location in locations">
+  <strong>{{location.name}}</strong><br>
+  {{location.street_address}}, {{location.street}}<br>
+  {{location.state}}, {{location.zip}}<br>
+  <abbr title="Phone">P:</abbr> {{location.phone}}
+</address>
+
