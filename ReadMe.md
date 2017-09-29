@@ -3,7 +3,7 @@ This is a basic angular website introduce you some of the features such as 2 way
 ## Project
 * Basic of Angular Features
 * Usage of Bootstrap
-* Plunkr Setup is good for starters
+* [Plunkr](http://plnkr.co) Setup is good for starters
 * Fetching Data with $http
 ### Experience in full SDLC
 * AngularJS (1.0, 2.0) Apps
