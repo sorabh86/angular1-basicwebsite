@@ -1,94 +1,352 @@
-body {
-  padding-top: 20px;
+/* Reset Styles */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html { 
+  font-family: 'Trebuchet MS';
+  font-style: 1.2em;
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+
+/* Base Styles */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+html {
+  background-color: #ffddee; 
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffddee), to(#ffeeff));
+  background-image: -webkit-linear-gradient(top, #ffddee, #ffeeff); 
+  background-image: -moz-linear-gradient(top, #ffddee, #ffeeff);
+  background-image: -o-linear-gradient(top, #ffddee, #ffeeff);
+  min-height: 100%;
+  height: auto;
+}
+
+body  {
+  font-family: Merriweather, serif;
+  font-size: 1rem;
+  line-height: 160%;
+  *zoom: 1;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bree Serif', serif;
+  font-weight: normal;
+  color: #333
+  text-shadow: 1px 1px rgb(255,255,255, 1);
+}
+
+a {
+  color: #145266;
+  font-family: Bree Serif, serif;
+}
+
+h1{
+  color: #145266;
+  font-size: 2.2rem;
+  line-height: 100%;
+  margin-bottom: 10px;
+}
+
+h2{ 
+  font-size: 1.5rem;
+  line-height: 90%;
+  color: #c61c6f;
+}
+
+h3{ 
+  font-size: 1.2rem;
+  color: #bd3613;
+  line-height: 110%;
+  margin-bottom: 5px;
+}
+
+p {
+  line-height: 1.3rem;
+  color: #333
+  margin-bottom: 10px;
+  font-family: 'Merriweather';
+}
+
+a.small {
+  line-height: 100%;
+  font-size: .9rem;
+}
+
+.ng-sos {
+  display: flex;
+}
+
+.ng-sos>.nav {
+  width:30%;
+  text-align: center;
+  min-height: calc(100vh - 40px);
+}
+.sos-view {
+  padding: 20px;
+  width: 100%;
+}
+.sos-logo {
+    background: #fff;
+    padding: 20px;
+    color: #888;
+    font-family: Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* nav */
+.nav {
+  background: #d81;
+}
+.nav .nav-link {
+  display: inline-block;
+  padding: 10px;
+  border-bottom: 2px solid #d44;
+  font-weight: bold;
+  text-decoration: none;
+  color: #eee;
+  width: 100%;
+}
+.nav .nav-link:hover {
+  background: #d44;
+}
+.nav-separate {
+  /*margin-top:15px;*/
+  border-top:4px solid #f92;
+}
+
+/* Search Styles */
+
+.search {
+  background: #ff5bcf;
+  color: #EEE8D5;
+  padding: 10px 20px;
+}
+
+.search h1 {
+  color: #EEE8D5;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 140%;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #C61C6F;
+    color: #FCF4DC;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+         -o-user-select: none;
+            user-select: none;
+}
+
+.btn .btn-left {
+  float: left;
+}
+
+.btn .btn-right {
+  float: right;
+}
+
+.btn:hover {
+    background: #09576D;
+}
+
+.search label {
+  display: none;
+}
+
+input {
+  font-family: 'Droid Sans', sans-serif;
+  width: 100%;
+  padding: 10px 0 10px 15px;
+  font-size: 1rem;
+  color: #333
+  background: rgba(255,255,255,0.4);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 10px;
+  outline: 0;
+}
+
+.search .formgroup input {
+  border: 1px solid rgba(0,0,0,0.3);
+  display: inline;
+  width: auto;
+}
+
+.search label.formgroup {
+  display: inline;
+  width: auto;
+}
+
+.search select {
+  display: inline;
+  padding: 10px 0 10px 15px;
+  font-size: 1rem;
+  color: #333
+  background: rgba(255,255,255,0.4);
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 10px;
+  outline: 0;
+}
+
+/* Artist List Styles */
+
+.artistlist {
+  background: #EEE8D5;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-radius: 0 0 20px 20px;
+  opacity: .95;
+  z-index: 10;
+}
+
+.artistlist ul {
+  margin: 0;
+  padding: 0;
+  background: #FDF6E3;
+}
+
+.artistlist li {
+  margin: 0;
+  padding: 10px 10px 0 10px;
+  border-bottom: 1px dotted black;
+}
+
+.artistlist a {
+  display: block;
+  text-decoration: none;
+}
+
+.artistlist li:hover {
+  background: #FDF6E3;
+}
+
+.artist img {
+  display: block;
+  float: left;
+  width: 60px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.artist info {
+  display: block;
+  float: left;
+  padding-left: 120px !important;
+}
+
+.artist:last-child {
+  border-bottom:none;
+}
+
+.artistinfo {
+  font-size: 1.1em;
+  line-height: 160%;
+  background: #EEE8D5;
+  color: #0F4150;
+  width: 90%;
+  min-width: 320px;
+  max-width: 620px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  z-index: 20;
+}
+
+.artistinfo h1{
+  font-size: 1.8em;
+  margin-bottom: 0;
+}
+
+.artistinfo img {
+  width: 40%;
+  max-width: 130px;
+  border-radius: 20px;
+}
+
+.artistinfo .btn {
+
 }
 
 .footer {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-top: 40px;
+  background: #111;
+  color:#ddd;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-top: 1px solid #eee;
-}
-
-.service {
-  border-bottom: solid 1px #ccc;
-  padding: 10px 10px;
-  margin:10px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  background-color: transparent;
-}
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
-}
-
-/* Customize the nav-justified links to be fill the entire space of the .navbar */
-
-.nav-justified {
-  background-color: #eee;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-.nav-justified > li > a {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 0;
-  font-weight: bold;
-  color: #777;
-  text-align: center;
-  background-color: #e5e5e5; /* Old browsers */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e5e5e5));
-  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
-  background-image:      -o-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
-  background-image:         linear-gradient(to bottom, #f5f5f5 0%,#e5e5e5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
-  background-repeat: repeat-x; /* Repeat the gradient */
-  border-bottom: 1px solid #d5d5d5;
-}
-.nav-justified > .active > a,
-.nav-justified > .active > a:hover,
-.nav-justified > .active > a:focus {
-  background-color: #ddd;
-  background-image: none;
-  -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
-          box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
-}
-.nav-justified > li:first-child > a {
-  border-radius: 5px 5px 0 0;
-}
-.nav-justified > li:last-child > a {
-  border-bottom: 0;
-  border-radius: 0 0 5px 5px;
-}
-
-@media (min-width: 768px) {
-  .nav-justified {
-    max-height: 52px;
-  }
-  .nav-justified > li > a {
-    border-right: 1px solid #d5d5d5;
-    border-left: 1px solid #fff;
-  }
-  .nav-justified > li:first-child > a {
-    border-left: 0;
-    border-radius: 5px 0 0 5px;
-  }
-  .nav-justified > li:last-child > a {
-    border-right: 0;
-    border-radius: 0 5px 5px 0;
-  }
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .masthead,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
 }

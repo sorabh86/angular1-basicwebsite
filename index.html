@@ -1,52 +1,37 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<!DOCTYPE html>
-<html lang="en" ng-app="swApp">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>Simple Website</title>
+  <title>Angular 1.x Practise</title>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-    <link href="css/style.css" rel="stylesheet">
+	<div class="ng-sos">
+		<ul class="nav">
+			<li class="sos-logo"><img src="favicon.ico"> rabh86</li>
+			<li><a class="nav-link" href="#/twoway">Two Way Binding</a></li>
+			<li><a class="nav-link" href="#/controlfunction">Control Function</a></li>
+			<li><a class="nav-link" href="#/loopmemory">Loop Memory</a></li>
+			<li><a class="nav-link" href="#/artistapp">Artist App</a></li>
+			<li><a class="nav-link" href="#/artistlist">Artist List</a></li>
+			<li class="nav-separate"></li>
+			<li><a class="nav-link" href="#/main">Home</a></li>
+            <li><a class="nav-link" href="#/about">About</a></li>
+            <li><a class="nav-link" href="#/services">Services</a></li>
+            <li><a class="nav-link" href="#/contact">Contact</a></li>
+		</ul>
+		<div class="sos-view" ng-view>loading...</div>
+	</div>
 
-  </head>
-
-  <body>
-
-    <div class="container">
-
-      <!-- The justified navigation menu is meant for single line per list item.
-           Multiple lines will require custom code not provided by Bootstrap. -->
-      <div class="masthead">
-        <h3 class="text-muted">Simple Website</h3>
-        <nav>
-          <ul class="nav nav-justified">
-            <li><a href="#!/main">Home</a></li>
-            <li><a href="#!/about">About</a></li>
-            <li><a href="#!/services">Services</a></li>
-            <li><a href="#!/contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div ng-controller="MainCtrl">
-        <div ng-view></div>
-      </div>
-
-      <!-- Site footer -->
-      <footer class="footer">
-        <p>&copy; 2016 Company, Inc.</p>
-      </footer>
-
-    </div> <!-- /container -->
-
-    <script src="//localhost/jquery/1.11.1/jquery.js"></script>
-    <script src="//localhost/angularjs/1.6.6/angular.js"></script>
-    <script src="//localhost/angularjs/1.6.6/angular-route.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+	<footer class="footer">
+    	<p>&copy; 2016 @Copyright Sorabh86</p>
+  	</footer>
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/angular/angular-route.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
 </html>
