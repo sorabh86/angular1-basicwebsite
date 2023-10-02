@@ -1,0 +1,18 @@
+{
+  "name": "ng-basicwebsite",
+  "version": "1.0.0",
+  "description": "This is a basic angular website introduce you some of the features such as 2 way binding, url routing and directives. It will have 3 pages - Home, About & Contact\r ## Project\r * Basic of Angular Features\r * Usage of Bootstrap\r * [Plunkr](http://plnkr.co) Setup is good for starters\r * Fetching Data with $http\r ### Experience in full SDLC\r * AngularJS (1.0, 2.0) Apps\r * PHP webstites\r * JavaScript (ECMA Script 5|6)\r * Flash | Flex | flexsdk\r * Frameworks | Wordpress | Magento \r * Mobile (Android | Window | IPHONE), Desktop Application\r * Databases (Relational Databases | MySQL, NoSQL | MongoDB )\r ### Contact Us\r SKYPE : ssorabh.ssharma",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "http-server ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
